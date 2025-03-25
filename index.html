@@ -4,44 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VAVADA Online Casino</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav">
         <div class="logo">
-          <a href="/">
+          <a href="/" class="logo-link">
             <img
               src="https://static.vavada.net/img/vavada_logo.00d780d293083a5c59c784b2ff0aee16.svg"
               alt="Vavada logo"
+              class="logo-img"
             />
           </a>
         </div>
         <div class="header-nav">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="/index.html">Home</a>
+              <a href="/index.html" class="nav-link">Home</a>
             </li>
-            <li class="nav-list-item"><a href="">Review</a></li>
-            <li class="nav-list-item"><a href="">Bonus</a></li>
-            <li class="nav-list-item"><a href="">Spins</a></li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link">Review</a>
+            </li>
+            <li class="nav-list-item"><a href="" class="nav-link">Bonus</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">Spins</a></li>
           </ul>
         </div>
-        <button class="login-btn">Log in</button>
-        <button class="register-btn">Registration</button>
+        <div class="auth">
+          <a href="" class="login">Log in</a>
+          <a href="" class="register"
+            ><span class="auth-span">Registration</span></a
+          >
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Vavada Casino</h1>
-      <p>Lorem Ipsum</p>
-      <section class="hero-section">
-        <p>Free bonus</p>
-        <button>Get bonus</button>
-      </section>
-      <p>Lorem Ipsum</p>
+      <div class="main-container">
+        <h1>Vavada Casino</h1>
+        <p>Lorem Ipsum</p>
+        <section class="hero-section">
+          <p>Free bonus</p>
+          <button>Get bonus</button>
+        </section>
+        <p>Lorem Ipsum</p>
+      </div>
     </main>
     <footer>
-      <nav>
+      <nav class="fotter-nav">
         <ul>
           <li><a href="">Contacts</a></li>
           <li><a href="">Rules</a></li>
@@ -75,5 +94,9 @@
   </body>
 </html>
 
-<!-- додати форму логіну та реєстрації на кнопки через js -->
 <!-- карусель банера -->
+<!-- список карток ігор -->
+<!-- футер, список логотипів зробити тогельним -->
+<!-- стилі -->
+<!-- адаптив під пристрої -->
+<!-- додати форму логіну та реєстрації на кнопки через js -->

@@ -1,0 +1,155 @@
+body {
+  min-width: 400px;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: Muller, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: #101226;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #212132;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-nav {
+  box-sizing: border-box;
+  border-top: 1px solid #363648;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-link {
+  display: block;
+  height: 50px;
+}
+
+.logo-img {
+  width: 200px;
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.auth {
+  border-top: 1px solid #363648;
+  box-sizing: border-box;
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 70px;
+}
+
+.login {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  background-color: #0000;
+  border-bottom: 1px solid #fff;
+  height: 30px;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.register {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 12px;
+  background-color: #fe284a;
+  box-shadow: 0 3px 0 0 #871628, 0 4px 4px 0 #000;
+  border-radius: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.auth-span {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #101226;
+  box-shadow: 0 0 30px 0 #00000080;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 55px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: none;
+}
+
+.hero-section {
+  background-image: url("https://static.vavada.net/img/main_banner_slides/sport.mobile.x2.2adf91793b91620e29d02099721b653f.webp");
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: url("https://static.vavada.net/img/main_banner_slides/maxbet.desktop.1a9e4a1cfaa3ef2f5de32e83b058a552.webp");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: url("https://static.vavada.net/img/main_banner_slides/maxbet.desktop.1a9e4a1cfaa3ef2f5de32e83b058a552.webp");
+  }
+}
+
+/* ------- */
+/* main {
+  display: none;
+} */
+
+footer {
+  display: none;
+}
