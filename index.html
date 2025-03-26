@@ -14,6 +14,10 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -135,77 +139,96 @@
       </div>
     </main>
     <footer>
-      <nav class="footer-nav">
-        <ul class="footer-nav-list">
-          <li class="foot-nav-item">
-            <a href="" class="foot-nav-item-link">Contacts</a>
-          </li>
-          <li class="foot-nav-item">
-            <a href="" class="foot-nav-item-link">Rules</a>
-          </li>
-          <li class="foot-nav-item">
-            <a href="" class="foot-nav-item-link">FAQ</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="footer-main-cont">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="foot-nav-item">
+              <a href="" class="foot-nav-item-link">Contacts</a>
+            </li>
+            <li class="foot-nav-item">
+              <a href="" class="foot-nav-item-link">Rules</a>
+            </li>
+            <li class="foot-nav-item">
+              <a href="" class="foot-nav-item-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="socials-container">
-        <ul class="socials-list">
-          <li class="socials-list-item">
-            <a
-              href="https://www.instagram.com/vavada.europ"
-              class="ig-link socials-link"
-              ><img
-                src="https://static.vavada.net/img/icons/icon_social/icon_social_instagram.4096b56b6cb3c40c7a7d64f5e4fd5281.svg"
-                alt="Instagram icon"
-                loading="lazy"
-                class="socials-icon ig-icon"
-            /></a>
-          </li>
-          <li class="socials-list-item">
-            <a
-              href="https://www.youtube.com/channel/UCxf-755owjaUfEQvGgAC3Og"
-              class="yt-link socials-link"
-              ><img
-                src="https://static.vavada.net/img/icons/icon_social/icon_social_youtube.55ca8bb8b9683beaef4d9f03f0801a00.svg"
-                alt="YouTube icon"
-                loading="lazy"
-                class="socials-icon yt-icon"
-            /></a>
-          </li>
-        </ul>
+        <div class="socials-container">
+          <ul class="socials-list">
+            <li class="socials-list-item">
+              <a
+                href="https://www.instagram.com/vavada.europ"
+                class="ig-link socials-link"
+                ><img
+                  src="https://static.vavada.net/img/icons/icon_social/icon_social_instagram.4096b56b6cb3c40c7a7d64f5e4fd5281.svg"
+                  alt="Instagram icon"
+                  loading="lazy"
+                  class="socials-icon ig-icon"
+              /></a>
+            </li>
+            <li class="socials-list-item">
+              <a
+                href="https://www.youtube.com/channel/UCxf-755owjaUfEQvGgAC3Og"
+                class="yt-link socials-link"
+                ><img
+                  src="https://static.vavada.net/img/icons/icon_social/icon_social_youtube.55ca8bb8b9683beaef4d9f03f0801a00.svg"
+                  alt="YouTube icon"
+                  loading="lazy"
+                  class="socials-icon yt-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <p>Copyright 2025 vavada.com</p>
+      <div class="footer-second-cont">
+        <p class="copyright">Copyright 2025 vavada.com</p>
 
-      <div class="payment-options">
-        <div class="title-container">
-          <h3 class="title">Payment methods</h3>
-          <button class="btn-down">arr down</button>
+        <div class="payment-options">
+          <div class="title-container">
+            <h3 class="title">
+              Payment methods
+              <button class="btn-down inactive-header">
+                <img
+                  src="https://static.vavada.net/img/icons/icon_dropdown.ec91691febf3c466a1e87290d466148e.svg"
+                  class="arrow-icon"
+                  alt="Arrow down"
+                  loading="lazy"
+                />
+              </button>
+            </h3>
+            <div class="list-wrapper">
+              <ul class="payment-list">
+                <li class="payment-list-item">
+                  <img
+                    src="https://static.vavada.net/img/main_paymethod/visa.5bf5989ee2a63be5110ead2ccc3afbfc.svg"
+                    alt="Visa logo"
+                    class="payment-logo"
+                  />
+                </li>
+                <li class="payment-list-item">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/80/Maestro_2016.svg"
+                    alt="Maestro logo"
+                    class="payment-logo"
+                  />
+                </li>
+                <li class="payment-list-item">
+                  <img
+                    src="https://static.vavada.net/img/wallet_method/logo_skrill.7f3d6b0aebb8caee5f96175608246b25.svg"
+                    alt="Skrill logo"
+                    class="payment-logo"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <ul class="payment-list">
-          <li>
-            <img
-              src="https://static.vavada.net/img/main_paymethod/visa.5bf5989ee2a63be5110ead2ccc3afbfc.svg"
-              alt="Visa logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://1000logos.net/wp-content/uploads/2020/07/Maestro-Logo-3.svg"
-              alt="Maestro logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://static.vavada.net/img/wallet_method/logo_skrill.7f3d6b0aebb8caee5f96175608246b25.svg"
-              alt="Skrill logo"
-            />
-          </li>
-        </ul>
       </div>
     </footer>
+    <!-- <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script> -->
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
 
@@ -222,3 +245,9 @@
 <!-- адаптив -->
 
 <!-- форма авторизації -->
+
+<!-- --------------------------- -->
+<!-- акордеон
+ адаптив
+ форма авторизації
+розмір іконок в платежах -->

@@ -207,11 +207,14 @@ h2 {
 footer {
   width: 100%;
   background-color: #161626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .footer-nav {
-  box-sizing: border-box;
-  border-top: 1px solid #363648;
   display: flex;
   width: 100%;
   height: 100%;
@@ -273,6 +276,102 @@ footer {
   height: 20px;
 }
 
+.copyright {
+  color: #646a87;
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+  align-self: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0px;
+  color: #fff;
+  text-align: left;
+  text-transform: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-down {
+  background-color: transparent;
+  border: none;
+  transition: 1000ms ease;
+}
+
+.arrow-icon {
+  margin: 0 8px;
+  transition: transform 0.5s;
+  width: 12px;
+}
+
+.active-header {
+  transform: rotate(180deg);
+  transition: 1000ms ease;
+}
+
+.list-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease-in-out max-height;
+}
+
+.footer-main-cont {
+  padding: 0px 10px 20px 10px;
+}
+
+.footer-second-cont {
+  border-top: 1px solid #303036;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 10px 20px 10px;
+}
+
+.payment-options {
+  margin-top: 20px;
+}
+
+.payment-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.payment-list-item {
+  height: 40px;
+  min-width: 80px;
+  color: #646a87;
+  font-size: 12px;
+  align-items: center;
+  background-color: #ffffff08;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  width: auto;
+}
+
+.payment-logo {
+  height: 100%;
+  max-height: 40px;
+  object-fit: contain;
+  width: 60px;
+}
+
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1200px) {
@@ -287,6 +386,6 @@ footer {
   display: none;
 } */
 
-.payment-list {
+/* .payment-list {
   display: none;
-}
+} */
