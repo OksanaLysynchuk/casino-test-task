@@ -1,25 +1,27 @@
 body {
+  width: 100%;
   min-width: 400px;
-  height: 100%;
-  padding: 0 10px;
+  /* height: 100%;
+  padding: 0 10px; */
   color: #fff;
   display: flex;
-  flex-direction: column;
   font-family: Muller, sans-serif;
   font-size: 16px;
   font-weight: 400;
   min-height: 100vh;
-  background-color: #101226;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #212132;
-  position: sticky;
+  background-color: #161626;
+  z-index: 100;
+  position: fixed;
   top: 0;
-  z-index: 1000;
 }
 
 .header-nav {
@@ -110,11 +112,18 @@ header {
   font-style: normal;
 }
 
-.main-container {
+main {
   width: 100%;
-  background-color: #101226;
+  margin-top: 150px;
+  padding: 5px;
+  background-color: #212132;
   box-shadow: 0 0 30px 0 #00000080;
   box-sizing: border-box;
+}
+
+.main-container {
+  padding: 10px;
+  margin-bottom: 45px;
 }
 
 h1 {
@@ -122,27 +131,151 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 38px;
-  line-height: 55px;
+  font-size: 28px;
+  line-height: 1;
   color: #fff;
-  margin-bottom: 30px;
+  margin: 0px 0px 20px 0px;
   text-align: left;
   text-transform: none;
 }
 
+.main-text {
+  line-height: 1.6;
+  margin: 0px 0px 20px 0px;
+}
+
 .hero-section {
-  background-image: url("https://static.vavada.net/img/main_banner_slides/sport.mobile.x2.2adf91793b91620e29d02099721b653f.webp");
+  margin: 0px 0px 20px 0px;
+}
+
+h2 {
+  margin: 0px 0px 10px 0px;
+  line-height: 1;
+  font-size: 31px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15),
+    -1px -1px 2px rgba(0, 0, 0, 0.15), 0 0 4px #000;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 12px;
+  background-color: #fe284a;
+  box-shadow: 0 3px 0 0 #871628, 0 4px 4px 0 #000;
+  border-radius: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.banner-span {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+footer {
+  width: 100%;
+  background-color: #161626;
+}
+
+.footer-nav {
+  box-sizing: border-box;
+  border-top: 1px solid #363648;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  gap: 24px;
+}
+
+.foot-nav-item-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  gap: 10px;
+}
+
+.socials-link {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+}
+
+.ig-link {
+  background-color: #3e5a98;
+  box-shadow: 0 3px 0 1px #253459;
+}
+
+.yt-link {
+  background-color: red;
+  box-shadow: 0 3px 0 1px #781712;
+}
+
+.socials-icon {
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section {
-    background-image: url("https://static.vavada.net/img/main_banner_slides/maxbet.desktop.1a9e4a1cfaa3ef2f5de32e83b058a552.webp");
-  }
 }
 @media screen and (min-width: 1200px) {
-  .hero-section {
-    background-image: url("https://static.vavada.net/img/main_banner_slides/maxbet.desktop.1a9e4a1cfaa3ef2f5de32e83b058a552.webp");
-  }
 }
 
 /* ------- */
@@ -150,6 +283,10 @@ h1 {
   display: none;
 } */
 
-footer {
+/* footer {
+  display: none;
+} */
+
+.payment-list {
   display: none;
 }
